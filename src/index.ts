@@ -8,4 +8,7 @@ app.get('/', (c) => {
   return c.text(`Hello, from social! ${num}`)
 })
 
-export default app
+export default {
+  port: 8080,
+  fetch: app.fetch,
+} 

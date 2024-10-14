@@ -18,7 +18,7 @@ COPY . .
 RUN bun run build
 
 # Expose the port your app runs on
-EXPOSE 3000
+EXPOSE 8080
 
 # Run the application
 CMD ["bun", "start"]
